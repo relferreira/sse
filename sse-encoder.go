@@ -78,7 +78,6 @@ func writeData(w stringWriter, data interface{}) error {
 		if err != nil {
 			return err
 		}
-		w.WriteString("\n")
 	default:
 		dataReplacer.WriteString(w, fmt.Sprint(data))
 		w.WriteString("\n\n")
